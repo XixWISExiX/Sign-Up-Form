@@ -9,6 +9,10 @@
   font-family: sans-serif;
 }
 
+body {
+  overflow: hidden;
+}
+
 .main-container {
   display: flex;
 }
@@ -17,6 +21,7 @@
   position: relative;
 }
 
+/* Get rid of bottom margin */
 .fern-background {
   height: 100vh;
 }
@@ -27,15 +32,20 @@
   position: absolute;
   top: 20%;
   display: flex;
+  width: 100%;
+  justify-content: center;
 }
 
 .odin-img {
-  width: 150px;
+  width: 125px;
+  padding: 20px 0;
 }
 
 .odin-text {
   font-family: "Norse Bold";
   color: white;
+  font-size: 125px;
+  padding-top: 45px;
 }
 
 .header-text {
