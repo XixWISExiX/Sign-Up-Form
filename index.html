@@ -8,57 +8,68 @@
     <title>Sign-Up Form</title>
   </head>
   <body>
-    <p class="header-text">
-      This is not a real online service! You know you need something like this
-      in your life to help you realize your deepest dreams.
-    </p>
-    <p class="header-text">Sign up now to get started.</p>
-    <p class="header-text">You know you want to.</p>
-    <p class="header-text">Let's do this!</p>
-    <form class="info" action="#" method="post">
-      <label for="first_name">FIRST NAME</label>
-      <input
-        type="text"
-        id="first_name"
-        name="first_name"
-        placeholder="John"
-        required
-      />
-      <label for="last_name">LAST NAME</label>
-      <input
-        type="text"
-        id="last_name"
-        name="last_name"
-        placeholder="Doe"
-        required
-      />
-      <label for="email">EMAIL</label>
-      <input
-        type="email"
-        id="email"
-        name="email"
-        placeholder="JohnDoe@gmail.com"
-        required
-      />
-      <label for="phone_number">PHONE NUMBER</label>
-      <input
-        type="text"
-        id="phone_number"
-        name="phone_number"
-        placeholder="444-444-4444"
-        required
-      />
-      <label for="password">PASSWORD</label>
-      <input type="password" id="password" name="password" required />
-      <label for="confirm_password">CONFIRM PASSWORD</label>
-      <input
-        type="password"
-        id="confirm_password"
-        name="confirm_password"
-        required
-      />
-    </form>
-    <button type="submit">Create Account</button>
-    <div class="log_in">Already have an account? <span>Log in</span></div>
+    <div class="main-container">
+      <div class="left-container">
+        <img class="fern-background" src="images/fern-background.jpg" />
+        <div class="dark-box">
+          <img class="odin-img" src="images/odin-lined.png" />
+          <div class="odin-text">ODIN</div>
+        </div>
+      </div>
+      <div class="right-container">
+        <p class="header-text">
+          This is not a real online service! You know you need something like
+          this in your life to help you realize your deepest dreams.
+        </p>
+        <p class="header-text">Sign up now to get started.</p>
+        <p class="header-text">You know you want to.</p>
+        <p class="header-text">Let's do this!</p>
+        <form class="info" action="#" method="post">
+          <label for="first_name">FIRST NAME</label>
+          <input
+            type="text"
+            id="first_name"
+            name="first_name"
+            placeholder="John"
+            required
+          />
+          <label for="last_name">LAST NAME</label>
+          <input
+            type="text"
+            id="last_name"
+            name="last_name"
+            placeholder="Doe"
+            required
+          />
+          <label for="email">EMAIL</label>
+          <input
+            type="email"
+            id="email"
+            name="email"
+            placeholder="JohnDoe@gmail.com"
+            required
+          />
+          <label for="phone_number">PHONE NUMBER</label>
+          <input
+            type="text"
+            id="phone_number"
+            name="phone_number"
+            placeholder="444-444-4444"
+            required
+          />
+          <label for="password">PASSWORD</label>
+          <input type="password" id="password" name="password" required />
+          <label for="confirm_password">CONFIRM PASSWORD</label>
+          <input
+            type="password"
+            id="confirm_password"
+            name="confirm_password"
+            required
+          />
+        </form>
+        <button type="submit">Create Account</button>
+        <div class="log_in">Already have an account? <span>Log in</span></div>
+      </div>
+    </div>
   </body>
 </html>
