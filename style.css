@@ -11,6 +11,7 @@
 
 body {
   overflow: hidden;
+  background-color: #e5e7eb;
 }
 
 .main-container {
@@ -22,11 +23,11 @@ body {
 }
 
 /* Get rid of bottom margin */
+/* Add squish effect to image when compressed */
 .fern-background {
   height: 100vh;
 }
 
-/* Make dark box width equal to fern background */
 .dark-box {
   background-color: rgba(0, 0, 0, 0.4);
   position: absolute;
@@ -48,7 +49,70 @@ body {
   padding-top: 45px;
 }
 
+.right-container {
+  height: 100vh;
+  /* padding-left: 50px; */
+  /* margin-left: 50px; */
+  /* display: flex; */
+  /* justify-content: center; */
+  /* flex-direction: column; */
+}
+
+.top-right-container {
+  padding-left: 50px;
+  margin-bottom: 80px;
+}
+
 .header-text {
-  font-size: 1rem;
+  font-size: 2rem;
   font-weight: bold;
+}
+
+.header-text-top {
+  margin-top: 150px;
+}
+
+.header-text-bottom {
+  margin-top: 2rem;
+}
+
+.italic {
+  font-style: italic;
+}
+
+.form-container {
+  padding: 20px 50px;
+  background-color: white;
+}
+
+.form-row {
+  display: flex;
+  margin: 10px 0;
+}
+
+.form-align {
+  display: flex;
+  flex-direction: column;
+  margin-right: 30px;
+}
+
+.bottom-right-container {
+  margin-top: 30px;
+  padding-left: 50px;
+}
+
+.account-btn {
+  padding: 10px 40px;
+  border-radius: 8px;
+  font-weight: bold;
+  background-color: #596d48;
+  color: white;
+}
+
+.log-in {
+  margin-top: 30px;
+}
+
+.log-in-btn {
+  color: #596d48;
 }

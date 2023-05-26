@@ -17,58 +17,89 @@
         </div>
       </div>
       <div class="right-container">
-        <p class="header-text">
-          This is not a real online service! You know you need something like
-          this in your life to help you realize your deepest dreams.
-        </p>
-        <p class="header-text">Sign up now to get started.</p>
-        <p class="header-text">You know you want to.</p>
-        <p class="header-text">Let's do this!</p>
-        <form class="info" action="#" method="post">
-          <label for="first_name">FIRST NAME</label>
-          <input
-            type="text"
-            id="first_name"
-            name="first_name"
-            placeholder="John"
-            required
-          />
-          <label for="last_name">LAST NAME</label>
-          <input
-            type="text"
-            id="last_name"
-            name="last_name"
-            placeholder="Doe"
-            required
-          />
-          <label for="email">EMAIL</label>
-          <input
-            type="email"
-            id="email"
-            name="email"
-            placeholder="JohnDoe@gmail.com"
-            required
-          />
-          <label for="phone_number">PHONE NUMBER</label>
-          <input
-            type="text"
-            id="phone_number"
-            name="phone_number"
-            placeholder="444-444-4444"
-            required
-          />
-          <label for="password">PASSWORD</label>
-          <input type="password" id="password" name="password" required />
-          <label for="confirm_password">CONFIRM PASSWORD</label>
-          <input
-            type="password"
-            id="confirm_password"
-            name="confirm_password"
-            required
-          />
-        </form>
-        <button type="submit">Create Account</button>
-        <div class="log_in">Already have an account? <span>Log in</span></div>
+        <div class="top-right-container">
+          <p class="header-text header-text-top">
+            This is not a real online service! You know you need something like
+            this in your life to help you realize your deepest dreams.
+          </p>
+          <p class="header-text">
+            Sign up <span class="italic">now</span> to get started.
+          </p>
+          <p class="header-text header-text-bottom">
+            You <span class="italic">know</span> you want to.
+          </p>
+        </div>
+        <div class="form-container">
+          <p class="header-text">Let's do this!</p>
+          <form class="info" action="#" method="post">
+            <div class="form-row">
+              <div class="form-align">
+                <label for="first_name">FIRST NAME</label>
+                <input
+                  type="text"
+                  id="first_name"
+                  name="first_name"
+                  placeholder="John"
+                  required
+                />
+              </div>
+              <div class="form-align">
+                <label for="last_name">LAST NAME</label>
+                <input
+                  type="text"
+                  id="last_name"
+                  name="last_name"
+                  placeholder="Doe"
+                  required
+                />
+              </v>
+            </div>
+            </div>
+            <div class="form-row">
+              <div class="form-align">
+                <label for="email">EMAIL</label>
+                <input
+                  type="email"
+                  id="email"
+                  name="email"
+                  placeholder="JohnDoe@gmail.com"
+                  required
+                />
+              </div>
+              <div class="form-align">
+                <label for="phone_number">PHONE NUMBER</label>
+                <input
+                  type="text"
+                  id="phone_number"
+                  name="phone_number"
+                  placeholder="444-444-4444"
+                  required
+                />
+              </div>
+            </div>
+            <div class="form-row">
+              <div class="form-align">
+                <label for="password">PASSWORD</label>
+                <input type="password" id="password" name="password" required />
+              </div>
+              <div class="form-align">
+                <label for="confirm_password">CONFIRM PASSWORD</label>
+                <input
+                  type="password"
+                  id="confirm_password"
+                  name="confirm_password"
+                  required
+                />
+              </div>
+            </div>
+          </form>
+        </div>
+        <div class="bottom-right-container">
+          <button class="account-btn" type="submit">Create Account</button>
+          <div class="log-in">
+            Already have an account? <span class="log-in-btn">Log in</span>
+          </div>
+        </div>
       </div>
     </div>
   </body>
