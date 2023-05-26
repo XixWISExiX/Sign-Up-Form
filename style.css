@@ -11,7 +11,12 @@
 
 body {
   overflow: hidden;
-  background-color: #e5e7eb;
+  background-color: #fafafa;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
 }
 
 .main-container {
@@ -81,7 +86,8 @@ body {
 }
 
 .form-container {
-  padding: 20px 50px;
+  padding: 20px 50px 50px;
+  height: 250px;
   background-color: white;
 }
 
@@ -93,8 +99,35 @@ body {
 .form-align {
   display: flex;
   flex-direction: column;
-  margin-right: 30px;
+  margin-top: 10px;
+  margin-right: 70px;
 }
+
+label {
+  letter-spacing: 1px;
+  margin-bottom: 1px;
+  color: #555555;
+}
+
+.info input {
+  padding: 12px 10px;
+  width: 300px;
+  height: 10px;
+  border-radius: 6px;
+  font-size: 1.4rem;
+  border: 1px solid #ebebeb;
+}
+
+.info input:focus {
+  outline: none;
+  border: 1px solid blue;
+  box-shadow: 0 0 2px rgba(0, 0, 0);
+}
+
+/* .info input:invalid {
+  outline: none;
+  border: 1px solid red;
+} */
 
 .bottom-right-container {
   margin-top: 30px;
@@ -102,17 +135,33 @@ body {
 }
 
 .account-btn {
-  padding: 10px 40px;
+  padding: 20px 60px;
   border-radius: 8px;
+  font-size: 1.5rem;
   font-weight: bold;
   background-color: #596d48;
   color: white;
+  border: 0;
+}
+
+.account-btn:hover {
+  cursor: pointer;
+  background-color: #404e33;
 }
 
 .log-in {
   margin-top: 30px;
+  font-size: 1rem;
 }
 
 .log-in-btn {
   color: #596d48;
+  font-size: 1rem;
+  background-color: white;
+  border: 0;
+}
+
+.log-in-btn:hover {
+  cursor: pointer;
+  color: #404e33;
 }
