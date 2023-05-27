@@ -118,7 +118,7 @@ label {
   height: 10px;
   border-radius: 6px;
   font-size: 1.4rem;
-  border: 1px solid #ebebeb;
+  border: 1px solid #e5e7eb;
 }
 
 .info input:focus {
@@ -127,10 +127,10 @@ label {
   box-shadow: 0 0 2px rgba(0, 0, 0);
 }
 
-.info input:invalid {
+/* .info input:invalid {
   outline: none;
   border: 2px solid red;
-}
+} */
 
 /* form.submitted input:invalid {
   outline: none;
@@ -141,10 +141,10 @@ label {
   border: 1px solid #ff0000;
 } */
 
-.invalid {
+/* .invalid {
   border: 4px solid #ff0000;
   width: 400px;
-}
+} */
 
 .password-text,
 .confirm_password-text {
@@ -156,6 +156,7 @@ label {
 .bottom-right-container {
   margin-top: 30px;
   padding-left: 50px;
+  font-size: 1.25rem;
 }
 
 .account-btn {
@@ -175,12 +176,12 @@ label {
 
 .log-in {
   margin-top: 30px;
-  font-size: 1rem;
+  font-size: 1.25rem;
 }
 
 .log-in-btn {
   color: #596d48;
-  font-size: 1rem;
+  font-size: 1.25rem;
   background-color: white;
   border: 0;
 }
@@ -188,4 +189,29 @@ label {
 .log-in-btn:hover {
   cursor: pointer;
   color: #404e33;
+}
+
+.account-container {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: black;
+}
+
+.account {
+  font-size: 10rem;
+  text-align: center;
+  background-image: linear-gradient(
+    to left,
+    violet,
+    indigo,
+    blue,
+    green,
+    yellow,
+    orange,
+    red
+  );
+  -webkit-background-clip: text;
+  color: transparent;
 }
