@@ -10,8 +10,6 @@
 }
 
 body {
-  /* overflow: hidden; */
-  /* height: 100%; */
   background-color: #fafafa;
 }
 
@@ -30,7 +28,6 @@ a {
   bottom: 0;
 }
 
-/* TODO Make the image stay when the page is reloaded */
 .fern-background {
   max-width: 100%;
   width: 760px;
@@ -57,7 +54,7 @@ a {
 }
 
 .odin-text {
-  font-family: "Norse Bold";
+  font-family: "Times New Roman", Times, serif;
   color: white;
   font-size: 125px;
   padding-top: 45px;
@@ -92,7 +89,6 @@ a {
 .form-container {
   padding: 20px 50px 50px;
   height: 300px;
-  /* width: 100%; */
   background-color: white;
   box-shadow: 0 0 8px rgba(0, 0, 0, 0.15);
 }
