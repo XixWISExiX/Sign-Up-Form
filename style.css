@@ -1,0 +1,231 @@
+@font-face {
+  font-family: "Norse Bold";
+  src: url(/fonts/Norse-Bold.otf);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  font-family: sans-serif;
+}
+
+body {
+  /* overflow: hidden; */
+  /* height: 100%; */
+  background-color: #fafafa;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+.main-container {
+  display: flex;
+}
+
+.left-container {
+  position: relative;
+  top: 0;
+  bottom: 0;
+}
+
+/* TODO Make the image stay when the page is reloaded */
+.fern-background {
+  max-width: 100%;
+  width: 760px;
+  min-width: 400px;
+  top: 0;
+  bottom: 0;
+  height: 100vh;
+  display: flex;
+  object-fit: cover;
+}
+
+.dark-box {
+  background-color: rgba(0, 0, 0, 0.4);
+  position: absolute;
+  top: 20%;
+  display: flex;
+  width: 100%;
+  justify-content: center;
+}
+
+.odin-img {
+  width: 125px;
+  padding: 20px 0;
+}
+
+.odin-text {
+  font-family: "Norse Bold";
+  color: white;
+  font-size: 125px;
+  padding-top: 45px;
+}
+
+.right-container {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.top-right-container {
+  padding-left: 50px;
+  margin-bottom: 15px;
+}
+
+.header-text {
+  font-size: 2rem;
+  font-weight: bold;
+  width: 85%;
+}
+
+.header-text-bottom {
+  margin-top: 2rem;
+}
+
+.italic {
+  font-style: italic;
+}
+
+.form-container {
+  padding: 20px 50px 50px;
+  height: 300px;
+  /* width: 100%; */
+  background-color: white;
+  box-shadow: 0 0 8px rgba(0, 0, 0, 0.15);
+}
+
+.form-row {
+  display: flex;
+  margin: 10px 0;
+}
+
+.form-align {
+  display: flex;
+  flex-direction: column;
+  margin-top: 20px;
+  margin-right: 70px;
+}
+
+label {
+  letter-spacing: 1px;
+  margin-bottom: 1px;
+  color: #555555;
+}
+
+.info input {
+  padding: 12px 10px;
+  width: 300px;
+  height: 10px;
+  border-radius: 6px;
+  font-size: 1.4rem;
+  border: 1px solid #e5e7eb;
+}
+
+.info input:focus {
+  outline: none;
+  border: 1px solid blue;
+  box-shadow: 0 0 2px rgba(0, 0, 0);
+}
+
+.password-text,
+.confirm_password-text {
+  color: red;
+  font-size: 0.75rem;
+  width: 300px;
+}
+
+.bottom-right-container {
+  margin-top: 30px;
+  padding-left: 50px;
+  font-size: 1.25rem;
+}
+
+.account-btn {
+  padding: 20px 60px;
+  border-radius: 8px;
+  font-size: 1.5rem;
+  font-weight: bold;
+  background-color: #596d48;
+  color: white;
+  border: 0;
+}
+
+.account-btn:hover {
+  cursor: pointer;
+  background-color: #404e33;
+}
+
+.log-in {
+  margin-top: 30px;
+  font-size: 1.25rem;
+}
+
+.log-in-btn {
+  color: #596d48;
+  font-size: 1.25rem;
+  background-color: white;
+  border: 0;
+}
+
+.log-in-btn:hover {
+  cursor: pointer;
+  color: #404e33;
+}
+
+.account-container {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: black;
+}
+
+.account {
+  font-size: 10rem;
+  text-align: center;
+  background-image: linear-gradient(
+    to left,
+    violet,
+    indigo,
+    blue,
+    green,
+    yellow,
+    orange,
+    red
+  );
+  -webkit-background-clip: text;
+  color: transparent;
+}
+
+@media (max-height: 740px) {
+  .top-right-container {
+    display: none;
+  }
+  .form-container {
+    width: 60vw;
+  }
+}
+
+@media (max-width: 1300px) {
+  .top-right-container {
+    display: none;
+  }
+  .main-container {
+    /* display: flex; */
+    /* justify-content: center; */
+    flex-direction: column;
+  }
+  .fern-background {
+    height: 300px;
+    width: 100%;
+  }
+  .right-container {
+    height: 560px;
+  }
+  .form-container {
+    width: 90vw;
+  }
+}

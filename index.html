@@ -5,7 +5,106 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="style.css" />
+    <script type="module" src="script.js"></script>
     <title>Sign-Up Form</title>
   </head>
-  <body></body>
+  <body>
+    <div class="main-container">
+      <div class="left-container">
+        <img class="fern-background" src="images/fern-background.jpg" />
+        <div class="dark-box">
+          <img class="odin-img" src="images/odin-lined.png" />
+          <div class="odin-text">ODIN</div>
+        </div>
+      </div>
+      <div class="right-container">
+        <div class="top-right-container">
+          <p class="header-text header-text-top">
+            This is not a real online service! You know you need something like
+            this in your life to help you realize your deepest dreams.
+          </p>
+          <p class="header-text">
+            Sign up <span class="italic">now</span> to get started.
+          </p>
+          <p class="header-text header-text-bottom">
+            You <span class="italic">know</span> you want to.
+          </p>
+        </div>
+        <div class="form-container">
+          <p class="header-text">Let's do this!</p>
+          <form class="info" action="accounts-html/account-created.html">
+            <div class="form-row">
+              <div class="form-align">
+                <label for="first-name">FIRST NAME</label>
+                <input
+                  type="text"
+                  id="first-name"
+                  name="first-name"
+                  placeholder="John"
+                  required
+                />
+              </div>
+              <div class="form-align">
+                <label for="last-name">LAST NAME</label>
+                <input
+                  type="text"
+                  id="last-name"
+                  name="last-name"
+                  placeholder="Doe"
+                  required
+                />
+              </v>
+            </div>
+            </div>
+            <div class="form-row">
+              <div class="form-align">
+                <label for="email">EMAIL</label>
+                <input
+                  type="email"
+                  id="email"
+                  name="email"
+                  placeholder="JohnDoe@gmail.com"
+                  required
+                />
+              </div>
+              <div class="form-align">
+                <label for="phone-number">PHONE NUMBER</label>
+                <input
+                  type="tel"
+                  id="phone-number"
+                  name="phone-number"
+                  placeholder="000-000-0000"
+                  pattern="[0-9]{3}-?[0-9]{3}-?[0-9]{4}"
+                  required
+                />
+              </div>
+            </div>
+            <div class="form-row">
+              <div class="form-align">
+                <label for="password">PASSWORD</label>
+                <input type="password" id="password" name="password" pattern="(?=.*\d)(?=.*[A-Za-z])(?=.*[!@#$%^&*]).{10,}" required />
+                <small class="password-text"></small>
+              </div>
+              <div class="form-align">
+                <label for="confirm_password">CONFIRM PASSWORD</label>
+                <input
+                  type="password"
+                  id="confirm_password"
+                  name="confirm_password"
+                  required
+                />
+                <small class="confirm_password-text"></small>
+              </div>
+            </div>
+        </div>
+        <div class="bottom-right-container">
+          <button class="account-btn" type="submit">Create Account</button>
+          </form>
+          <div class="log-in">
+            Already have an account? <button class="log-in-btn" type="button" ><a href="accounts-html/account-log-in.html">Log in</a></button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
 </html>
