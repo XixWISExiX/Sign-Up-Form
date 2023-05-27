@@ -10,7 +10,8 @@
 }
 
 body {
-  overflow: hidden;
+  /* overflow: hidden; */
+  /* height: 100%; */
   background-color: #fafafa;
 }
 
@@ -25,13 +26,20 @@ a {
 
 .left-container {
   position: relative;
+  top: 0;
+  bottom: 0;
 }
 
-/* TODO Get rid of bottom margin */
-/* TODO Add squish effect to image when compressed */
 /* TODO Make the image stay when the page is reloaded */
 .fern-background {
+  max-width: 100%;
+  width: 760px;
+  min-width: 400px;
+  top: 0;
+  bottom: 0;
   height: 100vh;
+  display: flex;
+  object-fit: cover;
 }
 
 .dark-box {
@@ -57,26 +65,20 @@ a {
 
 .right-container {
   height: 100vh;
-  /* padding-left: 50px; */
-  /* margin-left: 50px; */
-  /* display: flex; */
-  /* justify-content: center; */
-  /* flex-direction: column; */
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
 }
 
 .top-right-container {
   padding-left: 50px;
-  margin-bottom: 80px;
+  margin-bottom: 15px;
 }
 
 .header-text {
   font-size: 2rem;
   font-weight: bold;
   width: 85%;
-}
-
-.header-text-top {
-  margin-top: 100px;
 }
 
 .header-text-bottom {
@@ -90,6 +92,7 @@ a {
 .form-container {
   padding: 20px 50px 50px;
   height: 300px;
+  /* width: 100%; */
   background-color: white;
   box-shadow: 0 0 8px rgba(0, 0, 0, 0.15);
 }
@@ -195,4 +198,34 @@ label {
   );
   -webkit-background-clip: text;
   color: transparent;
+}
+
+@media (max-height: 740px) {
+  .top-right-container {
+    display: none;
+  }
+  .form-container {
+    width: 60vw;
+  }
+}
+
+@media (max-width: 1300px) {
+  .top-right-container {
+    display: none;
+  }
+  .main-container {
+    /* display: flex; */
+    /* justify-content: center; */
+    flex-direction: column;
+  }
+  .fern-background {
+    height: 300px;
+    width: 100%;
+  }
+  .right-container {
+    height: 560px;
+  }
+  .form-container {
+    width: 90vw;
+  }
 }
