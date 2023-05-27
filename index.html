@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="style.css" />
+    <script type="module" src="script.js"></script>
     <title>Sign-Up Form</title>
   </head>
   <body>
@@ -31,7 +32,7 @@
         </div>
         <div class="form-container">
           <p class="header-text">Let's do this!</p>
-          <form class="info" action="#" method="post">
+          <form class="info" action="accounts-html/account-created.html">
             <div class="form-row">
               <div class="form-align">
                 <label for="first-name">FIRST NAME</label>
@@ -69,10 +70,11 @@
               <div class="form-align">
                 <label for="phone-number">PHONE NUMBER</label>
                 <input
-                  type="text"
+                  type="tel"
                   id="phone-number"
                   name="phone-number"
-                  placeholder="444-444-4444"
+                  placeholder="000-000-0000"
+                  pattern="[0-9]{3}-?[0-9]{3}-?[0-9]{4}"
                   required
                 />
               </div>
@@ -80,24 +82,26 @@
             <div class="form-row">
               <div class="form-align">
                 <label for="password">PASSWORD</label>
-                <input type="password" id="password" name="password" required />
+                <input type="password" id="password" name="password" pattern="(?=.*\d)(?=.*[A-Za-z])(?=.*[!@#$%^&*]).{10,}" required />
+                <small class="password-text"></small>
               </div>
               <div class="form-align">
-                <label for="confirm-password">CONFIRM PASSWORD</label>
+                <label for="confirm_password">CONFIRM PASSWORD</label>
                 <input
                   type="password"
-                  id="confirm-password"
-                  name="confirm-password"
+                  id="confirm_password"
+                  name="confirm_password"
                   required
                 />
+                <small class="confirm_password-text"></small>
               </div>
             </div>
-          </form>
         </div>
         <div class="bottom-right-container">
           <button class="account-btn" type="submit">Create Account</button>
+          </form>
           <div class="log-in">
-            Already have an account? <button class="log-in-btn" type="button" ><a href="account-log-in.html">Log in</a></button>
+            Already have an account? <button class="log-in-btn" type="button" ><a href="accounts-html/account-log-in.html">Log in</a></button>
           </div>
         </div>
       </div>

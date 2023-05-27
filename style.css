@@ -27,8 +27,9 @@ a {
   position: relative;
 }
 
-/* Get rid of bottom margin */
-/* Add squish effect to image when compressed */
+/* TODO Get rid of bottom margin */
+/* TODO Add squish effect to image when compressed */
+/* TODO Make the image stay when the page is reloaded */
 .fern-background {
   height: 100vh;
 }
@@ -71,10 +72,11 @@ a {
 .header-text {
   font-size: 2rem;
   font-weight: bold;
+  width: 85%;
 }
 
 .header-text-top {
-  margin-top: 150px;
+  margin-top: 100px;
 }
 
 .header-text-bottom {
@@ -87,8 +89,9 @@ a {
 
 .form-container {
   padding: 20px 50px 50px;
-  height: 250px;
+  height: 300px;
   background-color: white;
+  box-shadow: 0 0 8px rgba(0, 0, 0, 0.15);
 }
 
 .form-row {
@@ -99,7 +102,7 @@ a {
 .form-align {
   display: flex;
   flex-direction: column;
-  margin-top: 10px;
+  margin-top: 20px;
   margin-right: 70px;
 }
 
@@ -124,10 +127,31 @@ label {
   box-shadow: 0 0 2px rgba(0, 0, 0);
 }
 
-/* .info input:invalid {
+.info input:invalid {
   outline: none;
-  border: 1px solid red;
+  border: 2px solid red;
+}
+
+/* form.submitted input:invalid {
+  outline: none;
+  border: 4px solid red;
 } */
+
+/* #first-name:invalid {
+  border: 1px solid #ff0000;
+} */
+
+.invalid {
+  border: 4px solid #ff0000;
+  width: 400px;
+}
+
+.password-text,
+.confirm_password-text {
+  color: red;
+  font-size: 0.75rem;
+  width: 300px;
+}
 
 .bottom-right-container {
   margin-top: 30px;
